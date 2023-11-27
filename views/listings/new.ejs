@@ -1,0 +1,76 @@
+<% layout("/layouts/boilerplate") -%>
+
+<div class="row mt-3">
+  <div class="col-8 offset-2">
+    <br />
+    <h3>Create a New Listing</h3>
+    <form
+      method="POST"
+      action="/listings"
+      novalidate
+      class="needs-validation"
+      enctype="multipart/form-data"
+    >
+      <div class="mb-3">
+        <lABEl for="title" class="form-label">Title</lABEl>
+        <input
+          name="listing[title]"
+          placeholder="Add a Ctachy Title"
+          type="text"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Tittle look Goods</div>
+      </div>
+      <div class="mb-3">
+        <lABEl for="description" class="formm-label">Description</lABEl>
+        <textarea
+          name="listing[description]"
+          class="form-control"
+          required
+        ></textarea>
+        <div class="valid-feedback">Please a Short Description</div>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Upload Listing Image</label>
+        <input name="listing[image]" type="file" class="form-control" />
+      </div>
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <input
+            name="listing[price]"
+            placeholder="1200"
+            type="number"
+            class="form-control"
+            required
+          />
+          <label for="price" class="form-label">Price</label>
+          <div class="valid-feedback">Price Should be Valid</div>
+        </div>
+        <div class="mb-3 col-md-8">
+          <label for="country" class="form-label">country</label>
+          <input
+            name="listing[country]"
+            placeholder="India"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">Country Should be Valid</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input
+          name="listing[location]"
+          placeholder="Uttrakhand,Manali"
+          type="text"
+          class="form-control"
+        />
+        <label for="location" class="form-label">country</label>
+        <div class="valid-feedback">Location Should be Valid</div>
+      </div>
+      <button class="btn btn-dark add-btn mt-3">Add</button>
+      <br />
+    </form>
+  </div>
+</div>

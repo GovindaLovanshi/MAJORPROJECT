@@ -11,7 +11,6 @@ const ExpressError = require("./utils/ExpressError.js");
 const listingsRouter = require("./routes/listing.js");
 const reviewRoter = require("./routes/review.js");
 const session = require("express-session");
-const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const userRouter = require("./routes/user.js");
 

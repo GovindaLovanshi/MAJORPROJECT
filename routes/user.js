@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/user");
-const wrapAsnc = require("../utils/wrapAsnc");
+const wrapAsnc = require("../utils/wrapAsnc.js");
 const passport = require("passport");
 const { reviewsSchema } = require("../schema");
 const { saveRedirectUrl } = require("../middleware");

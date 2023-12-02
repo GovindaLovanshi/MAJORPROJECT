@@ -13,6 +13,7 @@ const reviewRoter = require("./routes/review.js");
 const session = require("express-session");
 const flash = require("connect-flash");
 const userRouter = require("./routes/user.js");
+const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 
 const DBUrl = process.env.ATLASDB_URL;
 
